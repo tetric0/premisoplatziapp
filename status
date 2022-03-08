@@ -1,0 +1,8 @@
+* [33m64928ac[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Video 24 del Curso basico de Django (Platzi) acabado: Insercion de un formulario de eleccion de respuestas en el template de detalle de pregunta.
+* [33m586a462[m Video 23 del Curso basico de Django (Platzi) acabado: Uso de url para evitar el hardcoding en los enlaces a los templates.
+* [33mbe2abf5[m Video 22 del Curso basico de Django (Platzi) acabado: Segundo template (Detalle de pregunta con metodo get_object_or_404) acabado.
+* [33m9d42270[m Video 7 del Curso basico de Django (Platzi) acabado: Primer template (lista de preguntas) acabado.
+* [33m23b66ef[m Video 20 del Curso Basico de Django (Platzi) completado.
+* [33m725f56b[m Cambios hasta el video 19 del Curso Basico de Django (Platzi).
+* [33m318cb83[m Cambio de la opcion 'TIME_ZONE', de 'UTC' a 'Europe/Madrid', en el archivo 'premiosplatziapp/settings.py' (Video 7. Curso basico de Django)
+* [33m922c4a7[m Primer commit del proyecto 'Premios Platzi App' (Video 7. Curso basico de Django)
