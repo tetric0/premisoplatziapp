@@ -96,3 +96,15 @@ class QuestionIndexViewTests(TestCase):
             response.context['latest_question_list'],
             [past_question_2, past_question_1]
         )
+
+    def test_two_future_question(self):
+        """
+        The questions index page must not display any future questions
+        """
+        future_question_1 = create_question(question_text='Future question 1', days=30)
+        future_question_2 = create_question(question_text='Future question 2', days=40)
+        response = self.client.get(reverse('polls:index'))
+        self.assertQuerysetEqual(
+            response.context['latest_question_list'],
+            []
+        )
