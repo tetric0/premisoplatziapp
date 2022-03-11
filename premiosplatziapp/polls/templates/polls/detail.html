@@ -14,11 +14,12 @@
     <form action="{% url 'polls:vote' question.id %}" method="post">
         {% csrf_token %}
         <fieldset>
-            <legend><h1>{{ question.question_text }}</h1></legend>
+            <legend><h1>{{ question.question_text }} (Vota)</h1></legend>
             {% if error_message %}
                 <p><strong>{{ error_message }}</strong></p>
             {% endif %}
             {% for choice in question.choice_set.all %}
+            <div class="form-row">
                 <input
                     type="radio"
                     name="choice"
@@ -28,7 +29,7 @@
                 <label for="choice{{ forloop.counter }}">
                     {{ choice.choice_text }}
                 </label>
-                <br />
+            </div>
             {% endfor %}
         </fieldset>
         <input type="submit" value="Votar">
