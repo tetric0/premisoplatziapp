@@ -3,12 +3,12 @@ from . import views
 
 app_name = "polls"
 urlpatterns = [
-    # ex: /polls/
+    # Question Index View (URL example: /polls/)
     path("", views.IndexView.as_view(), name="index"),
-    # ex: /polls/5/
+    # Question Detail View (URL example: /polls/5/)
     path("<int:pk>/", views.DetailView.as_view(), name="detail"),
-    # ex: /polls/5/results/
-    path("<int:pk>/results/", views.DetailView.as_view(), name="results"),
-    # ex: /polls/5/vote/
+    # Question Results View (URL example: /polls/5/results/)
+    path("<int:pk>/results/", views.ResultsView.as_view(), name="results"),
+    # Question Vote View (URL example: /polls/5/vote/)
     path("<int:question_id>/vote/", views.vote, name="vote"),
 ]
